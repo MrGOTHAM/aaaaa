@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_height="400dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/icon_img1">
+
+        <com.example.testbuttonview.NotViewAnimationUtils
+                android:id="@+id/myView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/icon_img2"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"/>
+
+        </com.example.testbuttonview.NotViewAnimationUtils>
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/start_animator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开始揭露动画"/>
+
+</LinearLayout>
